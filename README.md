@@ -104,35 +104,9 @@ print(f"Accuracy: {accuracy * 100:.2f}%")
 The decision tree model achieved an accuracy of 100% on the training dataset, demonstrating that it correctly classified all instances. However, this may indicate overfitting, suggesting that further evaluation on a test set is recommended.
 
 ## Contributors ✨
-<table>
- <tr>
-   <td align="center">
-     <a href="#">
-       <br />
-       <sub><b>Sarankumar S.</b></sub>
-       <br />
-       <sub>22AM055</sub>
-     </a>
-   </td>
-   <td align="center">
-     <a href="#">
-       <br />
-       <sub><b>Ajinesh</b></sub>
-       <br />
-       <sub>22AM007</sub>
-     </a>
-   </td>
-   <td align="center">
-     <a href="#">
-       <br />
-       <sub><b>Gobika</b></sub>
-       <br />
-       <sub>22AM069</sub>
-     </a>
-   </td>
- </tr>
-</table>
-
+Ajinesh.D
+Sarankumar.S
+Gobika
 ## License 📝
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
