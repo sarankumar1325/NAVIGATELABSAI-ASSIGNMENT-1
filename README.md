@@ -64,56 +64,19 @@ Decision trees are valued for their interpretability, making them ideal for fiel
 ### Dataset
 A sample dataset with attributes `a1`, `a2`, `a3`, and `Classification` is used for training and testing the decision tree model.
 
-### Example Code
-```python
-import pandas as pd
-from sklearn.tree import DecisionTreeClassifier
-from sklearn import tree
-import matplotlib.pyplot as plt
-
-# Create the dataset
-data = {
-    'a1': [True, True, False, False, False, True, True, True, False, False],
-    'a2': ['Hot', 'Hot', 'Hot', 'Cool', 'Cool', 'Cool', 'Hot', 'Hot', 'Cool', 'Cool'],
-    'a3': ['High', 'High', 'High', 'Normal', 'Normal', 'High', 'High', 'Normal', 'Normal', 'High'],
-    'Classification': ['No', 'No', 'Yes', 'Yes', 'Yes', 'No', 'No', 'Yes', 'Yes', 'Yes']
-}
-df = pd.DataFrame(data)
-df_encoded = pd.get_dummies(df[['a1', 'a2', 'a3']])
-df['Classification'] = df['Classification'].map({'Yes': 1, 'No': 0})
-
-X = df_encoded
-y = df['Classification']
-
-# Train Decision Tree
-clf = DecisionTreeClassifier(criterion='entropy')
-clf.fit(X, y)
-
-# Visualize the Decision Tree
-plt.figure(figsize=(12,8))
-tree.plot_tree(clf, feature_names=X.columns, class_names=['No', 'Yes'], filled=True)
-plt.show()
-
-# Predict and Evaluate
-y_pred = clf.predict(X)
-accuracy = (y_pred == y).mean()
-print(f"Accuracy: {accuracy * 100:.2f}%")
-# Machine Learning Project 🤖
-
-## Results 📊
-The decision tree model achieved an accuracy of 100% on the training dataset, demonstrating that it correctly classified all instances. However, this may indicate overfitting, suggesting that further evaluation on a test set is recommended.
-
-## Contributors ✨
-Ajinesh.D
-Sarankumar.S
-Gobika
-## License 📝
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
----
-
 ## Contributors ✨
 Ajinesh.D
 Sarankumar.S
 Gobika.R
+
+## Results 📊
+The decision tree model achieved an accuracy of 100% on the training dataset, demonstrating that it correctly classified all instances. However, this may indicate overfitting, suggesting that further evaluation on a test set is recommended.
+
+
+## License 📝
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+
+
+
 ⭐ Star this repository if you find it helpful!
