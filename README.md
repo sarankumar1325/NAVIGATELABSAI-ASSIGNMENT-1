@@ -65,9 +65,9 @@ Decision trees are valued for their interpretability, making them ideal for fiel
 A sample dataset with attributes `a1`, `a2`, `a3`, and `Classification` is used for training and testing the decision tree model.
 
 ## Contributors ✨
--Ajinesh.D
--Sarankumar.S
--Gobika.R
+- Ajinesh.D
+- Sarankumar.S
+- Gobika.R
 
 ## Results 📊
 The decision tree model achieved an accuracy of 100% on the training dataset, demonstrating that it correctly classified all instances. However, this may indicate overfitting, suggesting that further evaluation on a test set is recommended.
